@@ -13,6 +13,7 @@ body {
     background-color: #c83c30;
 }
 .setting-button{
+  border-radius: 50%
 }
 .send-msg-button{
 }
