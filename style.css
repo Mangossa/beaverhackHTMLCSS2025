@@ -3,6 +3,9 @@ body {
 }
 
 .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
@@ -21,6 +24,7 @@ body {
 }
 .messages-container{
   width: 100%;
+  margin-top: 60px;
 }
 .user-msg-div{
   
