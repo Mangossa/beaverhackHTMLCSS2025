@@ -46,7 +46,7 @@ body {
 .user-msg-div{
   display: flex;
   justify-content: flex-end;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .user-msg-text{
   font-size: 16px;
