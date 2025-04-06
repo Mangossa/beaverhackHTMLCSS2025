@@ -11,8 +11,8 @@
 <body>
   <div class="top-bar">
     <h1>Canvas+</h1>
-     <button class="setting-button" aria-label="settings"  onclick="toggleSettings()">
-       <img src="https://www.iconninja.com/files/853/928/985/gear-icon.png" alt="settings" width="25" height="25" border="0" ></button>
+     <button class="setting-button" aria-label="settings onclick="toggleSettings()">
+       <img src="https://www.iconninja.com/files/853/928/985/gear-icon.png" alt="settings" width="25" height="25" border="0"></button>
   </div>
   <div class="chat-container">
   	<div class="user-msg-div">
@@ -29,19 +29,13 @@
     
   
     </div>
-	<div class="textareaElement" style="display: inline-block; width: 80%;" contenteditable>
-    </div>
+	<input id="text-input" class="textareaElement" style="display: inline-block; width: 70%;" contenteditable>
+  </input>
     <div class="send-msg-button" style="display: inline-block; width: 9%;">
       <button id="send-button">
         <img src="https://www.iconninja.com/files/976/97/258/send-icon.png" width="25" height="25" border="0">
       </button> 
     </div>
-
-	<div id="settingsPanel" class="settings-panel">
-    <button class="close-button" onclick="toggleSettings()">×</button>
-    <h2>Settings</h2>
-    <p>Put your settings options here</p>
-  </div>
 	<script src="script.js"></script>
 </body>
 
