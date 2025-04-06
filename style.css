@@ -17,9 +17,6 @@ body {
   margin-top:50px;
   margin-bottom:50px;
 }
-.send-msg-button{
-  margin-top: 30px;
-}
 .messages-container{
   width: 100%;
   margin-top: 30px;
@@ -62,4 +59,22 @@ body {
   height: fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
+}
+
+/* https://stackoverflow.com/questions/4954252/css-textarea-that-expands-as-you-type-text */
+.textareaElement {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 30px;
+  width: 300px;
+  min-height: 17px;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.send-msg-button{
+  border-radius: 75%;
+  margin-top:25px;
+  margin-bottom:25px;
 }
