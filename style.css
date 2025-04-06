@@ -1,3 +1,5 @@
+css
+/* Light Theme (Default) */
 html, body {
     height: 100%;
     margin: 0;
@@ -6,14 +8,14 @@ html, body {
 }
 
 body {
-
     display: flex;
     flex-direction: column;
-    width: 600px; 
-    height: 100vh; 
-    margin: 0 auto; 
-    background-color: #fff; 
+    width: 600px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #fff;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
 }
 
 .top-bar {
@@ -21,11 +23,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #ffffff;
     background-color: #c83c30;
-     flex-shrink: 0;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
 }
 
 .setting-button {
@@ -33,28 +36,26 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     border: none;
-    /*background: none;*/
-    padding: 0; 
+    padding: 0;
     cursor: pointer;
+    background-color: transparent;
 }
+
 .setting-button img {
     display: block;
     width: 40px;
-    height: 40px; 
+    height: 40px;
 }
 
-
-
 .chat-container-wrapper {
-    flex-grow: 1; 
-    overflow-y: auto; 
+    flex-grow: 1;
+    overflow-y: auto;
     overflow-x: hidden;
     padding: 10px 0;
     padding-bottom: 80px;
     box-sizing: border-box;
     width: 100%;
 }
-
 
 .chat-container {
     width: 100%;
@@ -66,12 +67,11 @@ body {
     margin-left: 0.5rem;
     justify-content: flex-start;
     margin-bottom: 5px;
-
 }
 
 .canvas-msg-text {
     font-size: 16px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     word-break: break-word;
 }
@@ -80,23 +80,23 @@ body {
     background: #262626;
     border-radius: 0.5rem;
     color: #fff;
-    max-width: 75%; 
+    max-width: 75%;
     padding: 0.5rem 1rem;
     margin: 0.5rem 0.5rem;
     box-sizing: border-box;
-
+    transition: background-color 0.3s ease;
 }
 
 .user-msg-div {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     margin-right: 1rem;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .user-msg-text {
     font-size: 16px;
-    word-break: break-word; 
+    word-break: break-word;
 }
 
 .user-msg-container {
@@ -106,47 +106,49 @@ body {
     max-width: 75%;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
-
+    transition: background-color 0.3s ease;
 }
 
 .inputArea {
     position: fixed;
     bottom: 0;
-    left: 0; 
-    right: 0; 
-    width: 600px; 
-    margin: 0 auto; 
+    left: 0;
+    right: 0;
+    width: 600px;
+    margin: 0 auto;
     background-color: white;
-    padding: 10px; 
+    padding: 10px;
     box-sizing: border-box;
-    display: flex; 
-    align-items: flex-end; 
-    border-top: 1px solid #ccc; 
-    flex-shrink: 0; 
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid #ccc;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
 }
 
 .textareaElement {
-    flex-grow: 1; 
+    flex-grow: 1;
     margin-right: 10px;
     min-height: 27px;
     border: 1px solid #ccc;
-    border-radius: 15px; 
-    padding: 5px 10px; 
-    max-height: 100px; 
+    border-radius: 15px;
+    padding: 5px 10px;
+    max-height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
     box-sizing: border-box;
-    font-size: 16px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .send-msg-button {
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 #send-button {
     border-radius: 50%;
     border: none;
-    background-color: #c83c30; 
+    background-color: #c83c30;
     padding: 8px;
     cursor: pointer;
     display: flex;
@@ -155,104 +157,155 @@ body {
 }
 
 #send-button img {
-     width: 20px; 
-     height: 20px; 
-     display: block;
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .chat-container-wrapper::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
+
 .chat-container-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
 }
+
 .chat-container-wrapper::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+    background: #888;
+    border-radius: 4px;
 }
+
 .chat-container-wrapper::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
 }
 
 .settings-panel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100vh;
-  background-color: #ffffff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 2000;
-  padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 2000;
+    padding: 20px;
 }
 
 .settings-panel.open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .close-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
-
-/* https://uiverse.io/mrhyddenn/old-fish-66 */
-/* The switch - the box around the slider */
 .switch {
- font-size: 17px;
- position: relative;
- display: inline-block;
- width: 62px;
- height: 35px;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 35px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
- opacity: 1;
- width: 0;
- height: 0;
+    opacity: 1;
+    width: 0;
+    height: 0;
 }
 
-/* The slider */
 .slider {
- position: absolute;
- cursor: pointer;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0px;
- background: #fff;
- transition: .4s;
- border-radius: 30px;
- border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    transition: .4s, background-color 0.3s ease;
+    border-radius: 30px;
+    border: 1px solid #ccc;
 }
 
 .slider:before {
- position: absolute;
- content: "";
- height: 1.9em;
- width: 1.9em;
- border-radius: 16px;
- left: 1.2px;
- top: 0;
- bottom: 0;
- background-color: white;
- box-shadow: 0 2px 5px #999999;
- transition: .4s;
+    position: absolute;
+    content: "";
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s, transform 0.3s ease;
 }
 
 input:checked + .slider {
- background-color: #5fdd54;
- border: 1px solid transparent;
+    background-color: #5fdd54;
+    border: 1px solid transparent;
 }
 
 input:checked + .slider:before {
- transform: translateX(1.5em);
+    transform: translateX(1.5em);
+}
+
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: #121212;
+}
+
+.top-bar.dark-mode {
+    background-color: #1f1f1f;
+}
+
+.inputArea.dark-mode {
+    background-color: #121212;
+    border-top: 1px solid #444;
+}
+
+.textareaElement.dark-mode {
+    background-color: #1f1f1f;
+    color: #eee;
+    border-color: #444;
+}
+
+.settings-panel.dark-mode {
+    background-color: #1f1f1f;
+    color: #eee;
+}
+
+.user-msg-container.dark-mode {
+    background-color: #2b5278;
+    color: #eee;
+}
+
+.canvas-msg-container.dark-mode {
+    background-color: #4a4a4a;
+    color: #eee;
+}
+
+.slider.dark-mode {
+    background-color: #fff;
+    border: 1px solid #444;
+}
+
+.slider.dark-mode:before {
+    background-color: #fff;
+}
+
+input:checked + .slider.dark-mode {
+    background-color: #5fdd54;
+    border: 1px solid transparent;
+}
+
+input:checked + .slider.dark-mode:before {
+    transform: translateX(1.5em);
 }
