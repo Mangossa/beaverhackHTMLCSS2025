@@ -77,4 +77,5 @@ body {
   border-radius: 75%;
   margin-top:25px;
   margin-bottom:25px;
+  transform: translateY(-7px);
 }
