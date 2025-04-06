@@ -1,5 +1,7 @@
 body {
   margin: 0px;
+  width: 400px;
+  height: 600px;
 }
 
 .top-bar {
@@ -11,6 +13,7 @@ body {
   	font-size: 16px;
   	color: #ffffff;
     background-color: #c83c30;
+    margin-bottom: 30px;
 }
 .setting-button{
   border-radius: 75%;
@@ -19,7 +22,8 @@ body {
 }
 .chat-container{
   width: 100%;
-  margin-top: 30px;
+
+
 }
 .canvas-msg-div{
   display: flex;
@@ -38,7 +42,7 @@ body {
   height: fit-content;
   width: fit-content;
   padding: 0.5rem 1rem;
-  margin: 0.12rem 0.5rem;
+  margin: 0.5rem 0.5rem;
 }
 .user-msg-div{
   display: flex;
@@ -78,36 +82,4 @@ body {
   margin-top:25px;
   margin-bottom:25px;
   transform: translateY(-7px);
-}
-
-/* =============================== */
-/* ✅ SETTINGS PANEL STYLES BELOW */
-/* =============================== */
-
-.settings-panel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100vh;
-  background-color: #ffffff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 2000;
-  padding: 20px;
-}
-
-.settings-panel.open {
-  transform: translateX(0);
-}
-
-.close-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
 }
